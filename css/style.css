@@ -1,0 +1,119 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-size: 16px;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+.container {
+  max-width: 90%;
+  margin: 0 auto;
+}
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  padding: 1rem 0;
+}
+nav .logo-section {
+  display: flex;
+  align-items: center;
+}
+nav .search-block {
+  border: 1px solid #262626;
+  padding: 0.5rem 0.8rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 1.4rem;
+  border-radius: 8px;
+}
+.logo-section h1 {
+  margin-right: 10px;
+}
+.logo-section input {
+  outline: none;
+  border: none;
+}
+.logo-section button {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  outline: none;
+  border: none;
+  padding: 5px;
+  cursor: pointer;
+}
+.hamberger {
+  cursor: pointer;
+}
+.hamberger div {
+  width: 15px;
+  height: 3px;
+  margin: 2px;
+  background: black;
+}
+nav ul.navbar {
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+  list-style-type: none;
+  padding: 1rem;
+  margin-top: 1rem;
+  background: whitesmoke;
+  display: none;
+}
+nav ul.navbar.show {
+  display: block;
+}
+nav ul li {
+  margin-bottom: 1rem;
+  text-align: center;
+}
+nav ul li a {
+  font-size: 1.2rem;
+  text-transform: uppercase;
+}
+nav ul li a:hover {
+  color: tomato;
+}
+.hero {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)),
+    url("../img/background.jpg");
+
+  min-height: calc(100vh - 70px);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom;
+  display: flex;
+  align-items: center;
+  max-width: 90%;
+}
+.hero__wrapper {
+  width: 90%;
+  padding: 5.2rem;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+.hero__wrapper h1 {
+  margin-bottom: 1.5rem;
+}
+
+.btn {
+  outline: none;
+  border: none;
+  padding: 0.9rem 3rem;
+  font-size: 1rem;
+  background-color: #9a12b3;
+  border: 2px solid transparent;
+  color: #ffffff;
+}
+.hero__wrapper .btn:hover {
+  background-color: transparent;
+  border: 2px solid #9a12b3;
+}
